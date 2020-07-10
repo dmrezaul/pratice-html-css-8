@@ -1,0 +1,72 @@
+/*DEFAULT CSS*/
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-image: url("picture/pic16.jpg");
+    background-size:cover;
+}
+
+/*NAV-MENU*/
+
+.nav-menu{
+    background:#3498db;
+}
+.nav-menu ul{
+    text-align:center;
+}
+.nav-menu ul li{
+    display:inline-block;
+    margin-left:-3px;
+}
+.nav-menu ul li a{
+    text-decoration:none;
+    color:#fff;
+    display:block;
+    padding:15px 20px;
+    font-size:18px;
+    border-right:1px solid #ddd;
+}
+.nav-menu ul li:first-child a{
+    border-left:1px solid #ddd;
+}
+.nav-menu ul li:hover > a{
+    background:#2980b9;
+}
+
+/*DROP DOWN*/
+
+.nav-menu ul li{
+    position:relative;
+}
+.nav-menu ul li ul{
+    position:absolute;
+    top:100%;
+    width:180px;
+    background:#3498db;
+    border-top:1px solid #ddd;
+}
+.nav-menu ul li ul li{
+    display:block;
+    margin-left:0;
+}
+.nav-menu ul li ul li a{
+    display:block;
+    border-right:none;
+    border-bottom:1px solid #ddd;
+}
+.nav-menu ul li ul li:first-child a{
+    border-left:none;
+}
+
+/*DROP-DOWN-HOVER*/
+
+.nav-menu ul li ul{
+    display:none;
+}
+.nav-menu ul li:hover ul{
+    display:block;
+}
